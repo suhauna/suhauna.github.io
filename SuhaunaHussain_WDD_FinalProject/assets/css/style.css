@@ -1,0 +1,656 @@
+
+
+/* CAROUSEL STYLES BELOW */
+.carousel-container {
+	width: 80%;
+	margin: auto;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	/*background-color: rgb(243,255,230);*/
+	/*border-color: #99CC66;*/
+	/*border-width: 1px;
+	border-style: solid;
+	box-shadow: 2px 2px 2px #888888;
+	padding-left: 20px;
+	padding-right: 20px;*/
+}
+
+#carousel {
+	width: 4800px;
+	height: 100%;
+	margin-left: 0px;
+	-webkit-transition: all 0.3s;
+}
+
+.carousel-item {
+	width: 95%;
+	position: relative;
+	height: 100%;
+	float: left; /*stack the items horizontally*/
+}
+
+/*#carousel-section {
+	background-color: black;
+}*/
+
+
+/* Styling for the carousel previous button */
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 70%;
+    margin-top: -30px;
+    cursor: pointer;
+   /* border-radius: 50%;
+    border: 1px solid black;*/
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the carousel next button */
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 70%;
+    margin-top: -35px;
+    cursor: pointer;
+/*    border-radius: 50%;
+    border: 1px solid black;*/
+    -webkit-transition: all 0.3s;
+}
+
+/* Other general CSS STYLES BELOW */
+.section {
+	width: 100%;
+	height: 700px;
+	position: relative;
+
+}
+
+
+/* Styling for the quotes and text in each section */
+.text {
+	position: absolute;
+	font-family: "Cutive Mono";
+	font-size: 20px;
+	/*font-family: "Annie Use Your Telescope";
+	font-size: 22px;*/
+	color: black;
+	font-weight: 200;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* begin CSS for COVER section */
+
+#cover-section {
+	
+	overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../../assets/img/IMG_3194_edited_forproject1.png"); 
+    /*background-image: url("../../assets/img/IMG_3194_edited_forproject_color.png");*/
+   /* opacity: .95;
+    z-index: 0;*/
+
+
+}
+
+/* begin CSS for COVER section */
+
+#cover-text {
+	
+	
+	z-index: 1;
+	color: black;
+	top: 20%;
+	left: 50%;
+	font-size: 10;
+	font-weight: 50px;
+	-webkit-animation: bounce .3s; 
+	-moz-animation: bounce .3s; 
+	animation: bounce .3s; 
+	}
+	@-webkit-keyframes bounce {
+	  to { -webkit-transform: scale(1.2); }
+	}
+	@-moz-keyframes bounce {
+	  to { -moz-transform: scale(1.2); }
+	}
+	@keyframes bounce {
+	  to { transform: scale(1.2); }
+	}
+
+
+}
+
+/* begin CSS for ABOUT section */
+	
+#about-section {
+	/*background-color: #8bb2af;*/
+	background-color: #fdecf0;
+	width: 100%;
+	height: 700px;
+}
+
+#about-text {
+	/*padding: 8px;
+	width: 400px;*/
+	color: black;
+	
+	/*margin-left: 10px;*/
+/*	float: left;*/
+	position: relative;
+
+
+}
+
+.about-section_title {
+	font-weight: 800;
+	font-family: "Cutive Mono";
+	/*display: inline-block;*/
+	width: 600px;
+	margin-left: 100px;
+	margin-top: 20px;
+
+}
+
+#about-text-specific {
+	width: 700px;
+	margin-left: 200px;
+	margin-bottom: 30px;
+	margin-top: 100px;
+}
+
+.about-section_description {
+
+	display: inline-block;
+	display: none;
+
+	font-weight: 200;
+	width: 700px;
+	/*background-color: rgb(243,255,230);*/
+	/*background-color: #f9f6f7;*/
+	/*border-color: #99CC66;*/
+	/*border-color: #bd9a9d;
+	border-width: 1px;
+	border-style: solid;*/
+/*	padding: 10px;*/
+	margin-top: -20px;
+	margin-left: 300px;	
+	font-family: "Goudy Bookletter 1911";
+
+}
+
+.about-section_description_reduced {
+	
+	/*display: inline-block;*/
+	font-weight: 200;
+	width: 600px;
+	/*background-color: rgb(243,255,230);*/
+	/*background-color: #f9f6f7;*/
+	/*background-color: #F8F8F8;  GRAY*/
+	/*border-color: #99CC66;
+	border-color: #bd9a9d;*/
+	/*border-color: #f9f6f7;
+	border-width: 1px;
+	border-style: solid;*/
+	/*box-shadow: .5px .5px .5px #888888;*/
+	padding: 15px;
+	margin-top: 20px;
+	margin-left: 300px;	
+	font-family: "Goudy Bookletter 1911";
+	/*border-radius: 8px;*/
+
+}
+
+.about-image {
+	width: 70px;
+	opacity: .4;
+
+
+
+
+}
+
+.extra_image {
+	width: 150px;
+
+
+
+}
+
+.extra_extra_image{
+	width: 50px;
+	display: inline-block;
+}
+.design_clip {
+	width: 200px;
+	height: 150px;
+	display: inline-block;
+	margin: 10px;
+}
+/* begin CSS for CONTACT section */
+
+#contact-section {
+	/*background-color: #cadbc8;*/
+	background-color: #dbc8ca;
+}
+
+#contact-text {
+	color: black;
+}
+
+
+
+/* begin CSS for bottom image  */
+
+
+#background_image {
+	/*THIS IS DISPLAY NONE RN*/
+	visibility: hidden; 
+	width: 100%;
+	height: 250px;
+	/*padding: 10px;*/
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99; /*change this if parallax-ing*/
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-opacity: 0;
+}
+
+#background_image.smaller {
+	visibility: visible;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99; /*change this if parallax-ing*/
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    /*background-color: #ffc7c7;*/
+    
+}
+
+.actual_background_image {
+	width: 100%;
+}
+
+
+
+/* begin CSS for navigation bar */
+
+#navbar {
+	/*THIS IS DISPLAY NONE RN*/
+	visibility: hidden; 
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99; /*change this if parallax-ing*/
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-opacity: 0;
+}
+
+#navbar-menu {
+
+    width: 569px;
+    float: right;
+    top: calc(50% - 29px/2);
+    position: relative;
+}
+
+#logo {
+    color: transparent;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: "Raleway";
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: calc(50% - 79px/2);
+	margin-left: 70px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+
+
+.navbar-menu-item {
+    color: rgba(255,255,255,0.75);
+    font-family: "Raleway";
+    display: inline-block;
+	margin-right: 50px;
+	float: right;
+	font-size: 20px;
+	font-weight: 500;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.navbar-menu-item:hover {
+	color: rgba(255,255,255,1);
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#navbar.smaller {
+	visibility: visible;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99; /*change this if parallax-ing*/
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    /*background-color: #ffc7c7;*/
+    background-color: #c8dbd9;
+    background-opacity: 1;
+}
+
+#navbar-menu.smaller {
+    width: 569px;
+    float: right;
+    top: calc(50% - 29px/2);
+    position: relative;
+}
+
+
+
+
+#logo.smaller {
+    color: white;
+    font-size: 25px;
+    padding-top: 15px;
+    font-weight: 500;
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: calc(50% - 57px/2);
+    margin-left: 70px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar-menu-item.smaller {
+    color: #fff;
+    font-family: "Raleway";
+    display: inline-block;
+	margin-right: 70px;
+	float: right;
+	font-size: 24px;
+	font-weight: 500;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.navbar-menu-item.smaller:hover {
+	color: rgba(255,255,255,0.5);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+/* end CSS for nav bar */
+
+
+/* start CSS for CLIPS section */
+
+
+.clip_image {
+	width: 100%;
+	/*padding-top: 15px;*/
+	margin-left: -10px;
+	margin-right: 5px;
+	margin-top: 10px;
+	position:absolute; 
+	bottom:0;
+	-webkit-filter: grayscale(70%);
+	filter: grayscale(70%);
+}
+
+
+
+.clip_image.desaturate { 
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+#clips-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 250px;
+	margin-top: 80px;
+	/*margin: auto;*/
+
+
+}
+
+.clips-item {
+	display: inline-block;
+	width: 160px;
+	height: 210px;
+	margin: 15px;
+	padding: 10px;
+	position: relative;
+	border-style: solid;
+	/*border-color: #59b300;*/
+	border-color: #888888;
+	border-width: 1px;
+	/*box-shadow: 10px 10px 5px #888888;*/
+	box-shadow: 6px 8px 5px #888888;
+
+
+	/*position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 75px);
+	border-radius: 50%;*/
+	overflow: hidden;
+	z-index: 999;
+	cursor: pointer;
+	transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+
+}
+
+#clips-text {
+	margin-top: 50px;
+}
+
+.clips-headline {
+	/*opacity: 0;
+	z-index: 1;*/
+}
+
+#clips-section {
+	overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../../assets/img/small-background-image.png"); 
+}
+
+/*#clips-section.small-background-image {
+	overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../../assets/img/small-background-image.png"); */
+    /*background-image: url("../../assets/img/IMG_3194_edited_forproject_color.png");*/
+   
+    /*z-index: 0;*/
+    /*transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;*/
+	
+/*}*/
+
+
+
+
+.dim_other_clips {
+	opacity: 0.2;
+}
+
+
+
+
+a:visited {
+    color: black;
+}
+
+
+
+
+
+/* DOCUMENT SET UP */
+
+body, html {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+	/*background-color: black;*/
+	-webkit-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: Lato;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+
+.img-scaled-wh {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+
+/* begin CSS for cover section */
+
+
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+
+
+/* Styling for contact section */
+
+#contact-section {
+	height: 400px;
+}
+
+#contact-text {
+	padding: 20px;
+	font-weight: 900;
+	margin: auto;
+}
+
+#contact-button-container {
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    margin: auto;
+   /* background-color: #003262;*/
+ }
+    
+.contact-button {
+    font-size: 24px;
+    font-weight: 700;
+    border: 4px solid white;
+    padding: 5px 15px;
+    display: inline-block;
+    
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #003262;
+    margin: auto;
+    
+}
